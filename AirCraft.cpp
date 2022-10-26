@@ -2,6 +2,9 @@
 #include <iostream>
 AirCraft :: AirCraft(){};
 
+void AirCraft :: refuel(){
+  this->fuel = 100;
+}
 
 void AirCraft :: set_fuel(float f){
   this->fuel = f;
