@@ -7,11 +7,10 @@ class AirFleet : public AirCraft
   int count;
   AirCraft** fleet;
 
-  AirFleet(){
-      
-  };
-
-
+  AirFleet();
+  int 
   void addAirCraft(AirCraft *aircraft);
   AirCraft **get_fleet();
   int get_count();
+
+};

@@ -17,6 +17,7 @@ class AirCraft
   void set_weight(int w);
   int get_weight();
 
+  void set_numberOfFlights(int nf);
   int get_numberOfFlights();
   virtual void fly(int headwind, int minutes) = 0;
 };

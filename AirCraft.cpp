@@ -1,5 +1,5 @@
 #include "AirCraft.h"
-
+#include <iostream>
 AirCraft :: AirCraft(){};
 
 
@@ -18,6 +18,10 @@ int AirCraft :: get_weight(){
   return this->weight;
 };
 
+
+void AirCraft :: set_numberOfFlights(int nf){
+  this->numberOfFlights = nf;
+}
 
 int AirCraft :: get_numberOfFlights(){
   return this->numberOfFlights;

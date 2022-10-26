@@ -1,4 +1,5 @@
 #include "Helicopter.h"
+#include <iostream>
 
 int Helicopter :: heliID = 0;
 
