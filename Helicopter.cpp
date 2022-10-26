@@ -13,18 +13,23 @@ Helicopter :: Helicopter(int w, std :: string n)
 }
 
 void Helicopter :: fly(int headwind, int minutes){
-  if(headwind >= 40)
+  if(headwind >= 40){
     this->fuel -= (0.4*minutes);
-    if(this->weight > 5670)
+    if(this->weight > 5670){
       this->fuel -= (0.01* (this->weight - 5670 )*minutes);
+    }
+  }
 
-  else
+  else{
     this->fuel -= (0.2*minutes);
-    if(this->weight > 5670)
+    if(this->weight > 5670){
       this->fuel -= (0.01* (this->weight - 5670 )*minutes);
+    }
+  }
 
-  if(this->fuel >= 20)
+  if(this->fuel >= 20){
     numberOfFlights ++;
+  }
 
 }
 
